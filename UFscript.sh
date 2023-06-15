@@ -23,17 +23,17 @@ echo "Installing Splunk Universal Forwarder..."
 # Start Splunk Universal Forwarder
 echo "Starting Splunk Universal Forwarder..."
 
-#"${INSTALL_DIR}"/bin/splunk add forward-server <ip>:<port> -auth  "${ADMIN_USERNAME}":"${ADMIN_PASSWORD}"
-
+"${INSTALL_DIR}"/bin/splunk add forward-server <ip>:<port> -auth  "${ADMIN_USERNAME}":"${ADMIN_PASSWORD}"
+echo "Starting Splunk Universal Forwarder Done..."
 sleep 15
-
-#"${INSTALL_DIR}"/bin/splunk set deploy-poll <ip>:<port> -auth "${ADMIN_USERNAME}":"${ADMIN_PASSWORD}"
-
-
+echo "Starting deploy poll"
+"${INSTALL_DIR}"/bin/splunk set deploy-poll <ip>:<port> -auth "${ADMIN_USERNAME}":"${ADMIN_PASSWORD}"
+echo "deploy poll done"
 
 sleep 30
 
 "${INSTALL_DIR}"/bin/splunk add monitor /var/log -index linux -auth "${ADMIN_USERNAME}":"${ADMIN_PASSWORD}"
+sleep 4
 
 "${INSTALL_DIR}"/bin/splunk restart
 
