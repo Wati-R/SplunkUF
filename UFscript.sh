@@ -32,7 +32,7 @@ echo "deploy poll done"
 
 sleep 30
 
-"${INSTALL_DIR}"/bin/splunk add monitor /var/log -index linux -auth "${ADMIN_USERNAME}":"${ADMIN_PASSWORD}"
+"${INSTALL_DIR}"/bin/splunk add monitor /var/log -index greenkolinux -auth "${ADMIN_USERNAME}":"${ADMIN_PASSWORD}"
 sleep 4
 
 "${INSTALL_DIR}"/bin/splunk restart
