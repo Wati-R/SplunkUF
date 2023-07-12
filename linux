@@ -1,2 +1,1 @@
-[monitor:///var/log/]
-index = test
+wget -O splunkforwarder-9.1.0.1-77f73c9edb85-x64-release.msi "https://download.splunk.com/products/universalforwarder/releases/9.1.0.1/windows/splunkforwarder-9.1.0.1-77f73c9edb85-x64-release.msi"
