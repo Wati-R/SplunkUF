@@ -1,0 +1,11 @@
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo wget -q -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/rhel/9.0/prod.repo
+
+sleep 5
+
+sudo dnf install sysmonforlinux -y
+
+wget https:///config.xml
+
+sysmon -accepteula -i /opt/config.xml
+
