@@ -1,8 +1,8 @@
 #!/bin/bash
 cd /opt/
 INSTALL_DIR="/opt/splunkforwarder"
-ADMIN_USERNAME="admin"
-ADMIN_PASSWORD="Wati@1234"
+ADMIN_USERNAME=
+ADMIN_PASSWORD=
 
 echo "Starting"
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
