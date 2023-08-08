@@ -3,8 +3,8 @@
 cd /opt/
 # Variables
 INSTALL_DIR="/opt/splunkforwarder"
-ADMIN_USERNAME="admin"
-ADMIN_PASSWORD="Wati@1234"
+ADMIN_USERNAME=
+ADMIN_PASSWORD=
 
 
 DOWNLOAD_URL="https://download.splunk.com/products/universalforwarder/releases/9.0.5/linux/splunkforwarder-9.0.5-e9494146ae5c-Linux-x86_64.tgz"
